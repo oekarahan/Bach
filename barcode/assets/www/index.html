@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!-- load css -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Barcode Scanner Demo</title>
+
+        <!-- load lib -->
+        <script src="lib/jquery-2.0.3.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <!-- load cordova & plugins -->
+        <script type="text/javascript" src="lib-cordova/cordova.js"></script>
+        <script type="text/javascript" src="lib-cordova/barcodescanner.js"></script>
+        
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+
+    <body>
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h1 class="panel-title">Scan result</h1>
+		  </div>
+		  <div id="container" class="panel-body">
+		  	<div class="well" id="barcodeType">
+		  		<h3><span class="label label-danger">Type</span></h3>
+		  		<div id="barcodeTypeContainer"></div>
+		  	</div>
+		  	<div class="well" id="barcodeResult">
+		  		<h3><span class="label label-success">Result</span></h3>
+		  		<div id="barcodeResultContainer"></div>
+		  	</div>
+		  </div>
+		  <div class="panel-footer">
+		  <button id="scan" type="button" class="btn btn-info">SCAN</button>
+		  </div>
+		</div>
+
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
