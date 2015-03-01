@@ -649,6 +649,18 @@
             margin-top:5%;
 
         }
+                      #artikelsuchen{
+
+            font-family:OpenSans-Regular;
+            font-size:0.9em;
+           margin-right:5%;
+           margin-left:5%;
+            background-color: white;
+            height:400px;
+            overflow:scroll;
+            margin-top:20%;
+
+        }
    
 
 
@@ -1081,6 +1093,13 @@
 		
 		
 		}
+			#EAN{
+		
+			float: left;
+		font-size:1.2em;
+		
+		
+		}
 
 
         #bildsub{
@@ -1450,6 +1469,19 @@
             height:450px;
             overflow:scroll;
 
+
+        }
+        
+        #artikelsuchen{
+
+            font-family:OpenSans-Regular;
+            font-size:0.7em;
+           margin-right:5%;
+           margin-left:5%;
+            background-color: white;
+            height:450px;
+            overflow:scroll;
+			margin-top:20%;
 
         }
 
@@ -1865,6 +1897,13 @@
 		
 		
 		}
+		#EAN{
+		
+			float: left;
+		font-size:1.5em;
+		
+		
+		}
 
 
         #bildsub{
@@ -2245,6 +2284,22 @@
             background-color: white;
             height:450px;
             overflow:scroll;
+
+
+        }
+        
+          #artikelsuchen{
+
+            font-family:OpenSans-Regular;
+            font-size:0.7em;
+           margin-right:5%;
+           margin-left:5%;
+           margin-top: 10%;
+            background-color: white;
+            height:450px;
+            overflow:scroll;
+            margin-top:20%;
+            
 
 
         }
