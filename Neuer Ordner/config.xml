@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.0.0">
-    <name>IVF-Katalog</name>
-
-    <description>
-        Katalog der IVF Hartmann AF Schweiz.
-    </description>
-
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
-    </author>
-
-    <access origin="*"/>
 <?xml version="1.0" encoding="UTF-8"?>
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
