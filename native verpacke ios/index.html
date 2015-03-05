@@ -1104,8 +1104,10 @@
                            
                            // Daten als feld in localStorage speichern!
                            var feld = [];
-                           localStorage["feld"] = JSON.stringify(datahandler.data);
-                           var alleDaten = JSON.parse(localStorage["feld"]);
+                           window.localStorage["feld"] = JSON.stringify(datahandler.data);
+                           var alleDaten = JSON.parse(window.localStorage["feld"]);
+                           
+                           
                            
                            //console.log(alleDaten);
                            
@@ -1114,21 +1116,25 @@
                            });
                 },
                 
-                /***********************************************Suchen Nr1 page= Produktgruppen***********************************************////////////////////
+                /***********************************************Suchen Nr1 page= Produktgruppen***********************************************/
                 Suchen: function (param) {
                     
+                    
+                    $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
                     var zahler = 0;
                     
                     
-                    console.log('ich suche im LocalStorage');
-                    var alleDaten = JSON.parse(localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
-                    datahandler.data = alleDaten; //alleDaten aus dem lokalStorage werden in datahandler.data geschrieben
+                    //console.log('ich suche im LocalStorage');
+                    //var alleDaten = JSON.parse(window.localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
+                    //datahandler.data = alleDaten; //alleDaten aus dem lokalStorage werden in datahandler.data geschrieben
+                    
+                    
                     
                     
                     if (suchbegriff == '') {
                         
                         
-                        $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+                        //$.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
                         
                         $('#zahler').html('');
                         var x = 0;
@@ -1148,12 +1154,14 @@
                             
                             $('#prgr').html('');
                             
-                            $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+                            //$.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
                             
                             
                             var diva = document.createElement('div');
                             diva.innerHTML = '<span style="color: #1a4064;">Produktgruppen</span>';
                             $('#prgr').append(diva);
+                            
+                            
                             
                             //Produktgruppe durchsuchen
                             for (var index = 0; index < datahandler.data.length; index++) {
@@ -1638,7 +1646,7 @@
                                             if(result === EAN){
                                                 
                                                 
-                                                console.log('gefunden:' +EAN);	
+                                                console.log('gefunden:' + EAN);
                                                 
                                                 //$.mobile.pageContainer.pagecontainer("change", "#Artikelsuche", { test: "Hello World!"});
                                                 
