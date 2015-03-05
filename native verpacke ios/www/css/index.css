@@ -1,0 +1,831 @@
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-bold;
+    src: url(Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBoldItalic';
+    src: url('Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-CondBold';
+    src: url('Open_Sans_Condensed/OpenSans-CondBold.ttf') format('truetype');
+}
+
+
+    /**************************************************************************************************************/
+
+    @media only screen and (min-device-width:200px) and (max-device-width:1300px)and (orientation: portrait) {
+
+        /*Smartphones*/
+
+        body {
+            background-image: url(start_smatphones.png);
+            background-size: cover;
+            background-repeat:no-repeat;
+            
+        }
+
+
+        .mainContent {
+            width: 100%;
+        }
+
+        #uber {
+            min-width: 100%;
+            max-width: 300%;
+            position: absolute;
+            top: 15%;
+            text-align: center;
+        }
+
+        #uberschrift {
+            color: white;
+            font-size: 1.4em;
+            font-family: OpenSans-Light;
+        }
+
+
+        #hartmann {
+            width: 20%;
+            margin-top:10%;
+            margin-left: 5%;
+            bottom: 10px;
+    
+        }
+        
+        #progressbar{
+		
+		margin-left:45%;
+		margin-top: 50%;
+		position:fixed;
+		
+		
+		}
+        
+
+        #icon {
+             
+           margin-top:45%;
+           margin-left:8%;
+           margin-right:8%;
+            display:inline-block;
+            text-align:center;
+           position: relative;
+           display:normal;
+       
+
+
+        }
+
+			#iconiconalters{
+
+			
+            width:28%;
+            margin-left:3%;
+            margin-right:3%;
+            float:left;
+            height:80px;
+            text-align:center;
+			
+			}
+
+		#iconiconindustrie{
+		
+		
+		 width:28%;
+            margin-left:3%;
+            margin-right:3%;
+            float:left;
+            height:80px;
+            text-align:center;
+			margin-top:15%;
+			}
+			
+			
+        #iconicon{
+
+            width:25%;
+            margin-left:4%;
+            margin-right:2%;
+            float:left;
+            height:80px;
+            text-align:center;
+         
+         
+
+        }
+
+
+
+        #iconicon1{
+
+            width:25%;
+            margin-left:4%;
+            margin-right:3%;
+            float:left;
+            height:80px;
+            margin-top:15%;
+            text-align:center;
+   
+            
+               
+         
+        }
+
+
+        #icon span{
+
+
+            font-family: OpenSans-bold;
+          color: white;
+         font-size: 0.7em;
+         text-align:center;
+
+        }
+
+
+            #icon img {
+                width: 45px;
+                margin-left: 5%;
+                margin-right: 8%;
+            }
+
+      
+
+        /************************************Smartphone Navigation*****(min-device-width:200px) and (max-device-width:600px) {**************************************************/
+
+
+    #navigation {
+        width: 100%;
+        position: fixed;
+         height:80px;
+
+    }
+
+
+    .navii {
+        position: fixed;
+        background-color: #1a4064;
+        width: 100%;
+        height:80px;
+    }
+
+        .navii ul {
+            list-style-type: none;
+            height:20%;
+
+        }
+
+
+
+        .navii li {
+            background-color: #1a4064;
+            display: inline-block;
+          margin-right:2%;
+            height:25px;
+           
+        }
+
+            .navii li a {
+                text-decoration: none;
+            }
+
+            .navii ul li div{
+
+                margin-top:5%;
+               
+
+            }
+
+            .navii ul li div a img{
+
+                width:30px;
+                height:30px;
+
+
+            }
+
+
+            #divprodukt{
+
+                text-align:center;
+                margin-right:2%;
+                font-family:OpenSans-bold;
+                    font-size:0.8em;
+
+            }
+
+            #divleistungen{
+                 text-align:center;
+                  margin-right:2%;
+                    font-family:OpenSans-bold;
+                    font-size:0.8em;
+            }
+
+            #divscanner{
+
+                text-align:center;
+                 margin-right:2%;
+                   font-family:OpenSans-bold;
+                    font-size:0.8em;
+            }
+
+
+        .navii span {
+            display: block;
+            
+            color: white;
+        }
+
+    #divzuruck {
+        margin-left:-25px;
+        margin-top: 7px;
+      
+    }
+
+        #zuruck img:hover {
+            opacity: 0.4;
+        }
+
+    #leistungen img:hover {
+        opacity: 0.4;
+    }
+
+    #scan img:hover {
+        opacity: 0.4;
+    }
+ /*********Suchfeld formatierung***************/
+
+    #suchen {
+        width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 25px;
+    	left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+    }
+    
+       #subsuchen {
+        width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+         top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+              #prosuchen {
+             width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+          top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                     #artgrpsuchen {
+            width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+          top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                            #artgrpartsuchen {
+            width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                                   #mediacentersuche {
+            width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+         top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+#suchesuche {
+             width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+          top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+             #artikelsuchensuche {
+             width: 110px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+         top: 25px;
+   		 left:34%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+
+/*******************************************************/
+    #bild {
+        position: fixed;
+        height: 28px;
+        left: 85%;
+        top: 25px;
+        border-radius: 4px;
+    }
+
+
+        #bildprgr{
+
+            width:230px;
+            height:120px;
+            border-radius: 4px;
+
+        }
+
+		#prgrspan{
+		
+	   		
+            height:20px;
+         	margin-left:15%;
+          
+
+		}
+		
+		#prgr{
+		
+			float: left;
+		font-size:1.2em;
+		
+		
+		}
+
+
+        #bildsub{
+
+            width:230px;
+            height:120px;
+            border-radius: 4px;
+
+        }
+
+
+		#subspan{
+		
+	   		
+            height:20px;
+         	margin-left:15%;
+          
+
+		}
+		
+		#subsub{
+		
+			float: left;
+		font-size:1.2em;
+		
+		
+		}
+        #bildpr{
+
+             
+            width:230px;
+            height:120px;
+            border-radius: 4px;
+           
+
+        }
+
+        #bildartikelgruppen{
+
+             width:230px;
+            height:120px;
+            border-radius: 4px;
+        }
+        
+        
+        
+        
+        #prodivtrans{
+        
+        width:auto;
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:13%;
+        height:450px;
+       	border-radius: 4px;
+        background:rgba(255,255,255,0.5);
+        text-align:center;
+        
+        }
+        
+        
+        
+        
+             #subdivtrans{
+        
+        width:auto;
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:33%;
+        height:430px;
+       	border-radius: 4px;
+        background:rgba(255,255,255,0.5);
+        text-align:center;
+        
+        }
+        
+        #artgrpdivtrans{
+            width:auto;
+            margin-left:5%;
+            margin-right:5%;
+            margin-top:33%;
+            height:430px;
+            border-radius: 4px;
+            background:rgba(255,255,255,0.5);
+            text-align:center;
+        }
+
+    #produktgruppen_inhalt {
+        color: #1a4064;
+        font-size: 1.0em;
+        font-family:OpenSans-Regular;
+        height: 420px;
+        width: auto;
+        top:25%;
+        text-align:center;
+        overflow:scroll;
+        
+
+    }
+
+
+    #sub {
+    
+        color: #1a4064;
+        font-size: 1.0em;
+        font-family:OpenSans-Regular;
+        height: 400px;
+        margin-left:7%;
+        top:10%;
+        text-align:center;
+        overflow: scroll;
+
+    }
+
+    #products {
+        color: #1a4064;
+        font-size: 1.0em;
+        font-family:OpenSans-Regular;
+        height: 390px;
+        margin-left:7%;
+        top:10%;
+        text-align:center;
+        overflow: scroll;
+
+    }
+
+
+
+
+    #artikelgrp {
+        color: #1a4064;
+        font-size: 1.0em;
+        font-family:OpenSans-Regular;
+        height: 400px;
+        margin-left:7%;
+        top:10%;
+        text-align:center;
+        overflow: scroll;
+    }
+
+
+
+    #Produktgruppen {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       
+        font-size: 15px;
+    }
+
+    #artikelgrp {
+        color: #1a4064;
+       font-family:OpenSans-Regular;
+       font-size: 15px;
+      
+    }
+
+
+
+
+    #artgrp {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       font-size: 15px;
+        
+    }
+
+
+
+
+    #produktname {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+     
+        font-size: 15px;
+    }
+
+
+
+    #feld {
+        border-radius: 4px;
+        bottom: 22px !important;
+        width: 50px;
+        background-color: white;
+    }
+
+
+
+    #buttonschrift {
+        color: white;
+    }
+
+
+
+
+    #button {
+        border-radius: 3px;
+        font-family:OpenSans-bold;
+        position:relative;
+      
+       background-color:#eaf4f5; 
+       margin-left:0%; 
+       width:100%; 
+       height: 60px; 
+
+
+    }
+
+
+    #footer{
+        position: absolute;
+        bottom:25px;
+        
+
+
+    }
+
+    #artgrpart {
+        color: #1a4064;
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height:245px;
+        
+    }
+
+    #artgrp{
+
+        font-size:13px;
+         font-family: OpenSans-bold;
+         
+    }
+
+    #artgrpbild{
+    
+      
+          height:90px;
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+
+
+
+
+    }
+
+    #artikelgruppename{
+      background-color: white; 
+      border: 2px solid white;
+     margin-left:5%;
+      height:45px;
+
+    }
+
+
+    #divaga {
+      
+
+        margin-top: 30%;
+        height:450px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family:OpenSans-Regular;
+        border-radius:4px;
+       
+}
+   
+    
+      #artikelgrpdiv{
+
+            margin-top: 27%;
+        height:400px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family:OpenSans-Regular;
+       
+        
+          
+        }
+    
+    
+    
+
+    #divmediacenter {
+        color: #1a4064;
+        font-family: OpenSans-Regular;
+        font-size: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #media {
+        background-color: white; 
+        overflow:scroll;
+        height:450px;
+        margin-bottom: 10%;
+        font-family: OpenSans-Regular;
+        margin-left: 4%;
+        margin-right:4%;
+        margin-top:3%
+    }
+
+        #media span {
+            display: inline;
+            font-family: OpenSans-Regular;
+            color: #1a4064;
+            font-size: 0.6em;
+         
+        }
+
+        
+                #sapnr{
+            margin-left:5%;
+            margin-right:10%;
+            font-family: OpenSans-bold;
+
+        }
+
+        #sap{
+
+            font-size:10px;
+           color: #1a4064;
+           height:30px;
+           width:40px;
+        }
+
+        #divlink {
+           width:250px; 
+          
+           float: right; 
+           font-family:OpenSans-Regular;
+           overflow-y:scroll; 
+           font-size: 0.6em;
+       
+        }
+
+
+        #prgrlinks{
+            
+          
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+        }
+
+        #sublinks{
+           
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+
+        }
+
+        #prolinks{
+           
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+
+
+        }
+
+
+        #divsuchediv{
+
+            font-family:OpenSans-Regular;
+            font-size:0.7em;
+           margin-right:5%;
+           margin-left:5%;
+            background-color: white;
+            height:400px;
+            overflow:scroll;
+            border-radius:4px;
+            margin-top:35%;
+            
+
+
+        }
+
+
+      
+
+        #artikelohneartikelgruppen{
+
+
+            color: #1a4064;
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height:220px;
+
+        }
+
+        #buttonmedia{
+
+       
+            border-radius: 3px;
+        font-family:OpenSans-bold;
+        position:relative;
+      
+       background-color:#eaf4f5; 
+       margin-left:0%; 
+       width:100%; 
+       height: 60px; 
+            
+           
+
+        }
+
+}
+
+
