@@ -16,9 +16,9 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-	
-	<preference name="phonegap-version" value="3.7.0" />
-
+<feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
     <name>Katalog-App</name>
     <description>
         Katalog-App der IVF HARTMANN AG SCHWEIZ
@@ -91,9 +91,6 @@
     </feature>
     <feature name="BarcodeScanner">
         <param name="ios-package" value="CDVBarcodeScanner" />
-    </feature>
-	<feature name="LocalStorage">
-        <param name="ios-package" value="CDVLocalStorage" />
     </feature>
     
 </widget>
